@@ -3,25 +3,114 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Mensaje</title>
+
+  <title>Propuesta ❤️</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;600;700&display=swap" rel="stylesheet">
+
   <style>
+    * {
+      box-sizing: border-box;
+    }
+
     body {
       margin: 0;
       min-height: 100vh;
-      display: grid;
-      place-items: center;
-      font-family: Arial, sans-serif;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      font-family: 'Quicksand', sans-serif;
+
+      background: linear-gradient(
+        180deg,
+        rgba(255, 228, 236, 0.95),
+        rgba(255, 192, 203, 0.75)
+      );
+
       padding: 24px;
-      text-align: center;
-      background: #f7f7f7;
     }
-    h1 {
-      font-size: clamp(28px, 8vw, 56px);
-      line-height: 1.15;
+
+    .contenedor {
+      width: 100%;
+      max-width: 600px;
+      text-align: center;
+
+      background: rgba(255,255,255,0.35);
+      backdrop-filter: blur(8px);
+
+      border-radius: 24px;
+      padding: 30px 20px;
+
+      box-shadow: 0 8px 30px rgba(0,0,0,0.08);
+    }
+
+    .imagen {
+      width: 100%;
+      max-width: 380px;
+      height: auto;
+
+      border-radius: 18px;
+
+      margin: 12px auto;
+      display: block;
+
+      box-shadow: 0 4px 15px rgba(0,0,0,0.12);
+    }
+
+    .mensaje {
+      margin: 28px 0;
+
+      color: #6b4f5b;
+
+      font-size: clamp(22px, 5vw, 34px);
+      font-weight: 700;
+      line-height: 1.5;
+    }
+
+    .corazon {
+      font-size: 28px;
+      margin: 15px 0;
     }
   </style>
 </head>
+
 <body>
-  <h1>Tu mensaje acá</h1>
+
+  <div class="contenedor">
+
+    <img
+      src="corazones.png"
+      alt="Imagen corazones"
+      class="imagen"
+    >
+    
+    <img
+      src="20260311_215730.jpg"
+      alt="Imagen nuestra"
+      class="imagen"
+    >
+
+    <div class="corazon">❤️</div>
+
+    <div class="mensaje">
+      💕 Te amo ❤️
+    </div>
+    <div class="mensaje">
+      ¿Querés ser mi novia?
+    </div>
+
+    <div class="corazon">❤️</div>
+
+    <img
+      src="flores.png"
+      alt="Imagen flores"
+      class="imagen"
+    >
+
+  </div>
+
 </body>
 </html>
